@@ -1,0 +1,154 @@
+
+
+
+
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 20fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr 33fr 4fr;
+        background-color: bisque;
+    }
+
+    header {
+        grid-column: 1/5;
+        grid-row: 1/2;
+        font-size: 45px;
+        font-family: 'Bungee',
+        cursive;
+
+        text-decoration: none;
+
+        background-color: aliceblue;
+        background-repeat: repeat-x;
+        background-size: 110%;
+
+    }
+
+
+
+    header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        margin-left: 35px;
+
+
+    }
+
+    header li a {
+        display: inline-block;
+        color: white;
+
+        padding: 40px 30px;
+        text-decoration: none;
+
+    }
+
+    .wrapper main {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-image: url("../images/large/orange.jpg");
+        background-repeat: repeat-x;
+        background-size: 75% 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+    }
+
+    .wrapper main img {
+        margin: 0 auto;
+        /* if two, then top/bottom and right/left // if three, then top and right/left and bottom */
+    }
+
+    .wrapper footer {
+        grid-column: 3/4;
+        grid-row: 4/6;
+        margin-left: 110px;
+        font-size: 20px;
+        font-family: 'Bungee',
+        cursive;
+        color: #EFB68C;
+    }
+
+    .container {
+        display: grid;
+        background-color: bisque
+
+    grid-template-rows: 1fr 10fr 1fr;
+        grid-template-columns: 1fr 1fr;}
+
+    .container main {
+        padding: 70px;
+
+
+
+
+    }
+
+    .container h1 {
+        grid-column: 1/1;
+        text-align: left;
+        font-family: 'bungee';
+        font-size: 200px;
+        margin-top: 70px;
+        margin-bottom: 0;
+        color: white;
+        -webkit-text-stroke: 2px #EFB68C;
+    }
+
+    .container h2 {
+        grid-column: 1/1;
+        font-size: 50px;
+        text-align: left;
+        font-family: 'bungee';
+        margin: 8px;
+        color: #EFB68C;
+
+    }
+
+    .container main img {
+        grid-column: 1/1;
+        align-items: end;
+
+        margin-bottom: 0px;
+    }
+
+    .container main p {
+        grid-column: 2/2;
+        font-family: 'jura';
+        border-bottom: 2px solid orange;
+        border-top: 2px solid orange;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 60px;
+    }
+
+    .container main h3 {
+        grid-column: 1/1;
+        font-family: 'bungee';
+        font-size: 30px;
+        padding: :0;
+    }
+
+    .container main h4 {
+        grid-column: 1/1;
+        font-family: 'bungee';
+        font-size: 10px;
+        padding-top: 0px;
+        padding-bottom: 45px;
+
+    }
+
+    .container p {
+        grid-column: 2/2;
+        font-family: "jura";
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,121 @@
+#hand {
+    position: relative;
+    height: 256px;
+    width: 256px;
+}
+
+#hand.move {
+    animation: moveing 2s linear infinite;
+
+}
+
+
+@keyframes moveing {
+    0% {
+        right: 1500px;
+    }
+
+    100% {
+        right: -1500px;
+    }
+}
+
+
+
+#hand.fade {
+    opacity: 1;
+    animation: fade 1s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#hand.jump {
+    animation: jump .3s linear alternate infinite;
+    animation-direction: alternate-reverse;
+
+
+}
+
+@keyframes jump {
+    0% {
+        bottom: 200px;
+    }
+    50% {
+        bottom: -100px;
+    }
+
+}
+
+
+#hand.glow {
+    background-color: yellow;
+    opacity: 1;
+    animation: glow 10s linear infinite;
+    animation-direction: alternate-reverse;
+
+
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+        background-color: white;
+        border-radius: 100%;
+    }
+    50% {
+        opacity: 0;
+        background-color: gold;
+        border-radius: 100%;
+
+    }
+    100% {
+        opacity: 1;
+        background-color: white;
+        border-radius: 100%;
+    }
+
+    #hand.shake {
+        animation: shake 5s linear infinite;
+        animation-direction: alternate-reverse;
+    }
+
+
+    @keyframes shake {
+        0% {
+            transform: translateX( 0px);
+        }
+        25% {
+            transform: translateX( 50px);
+        }
+        50% {
+            transform: translateX( 0px);
+        }
+        100% {
+            transform: translateX( 50px);
+        }
+    }
+
+    #hand.fall {
+    animation: fall 3s linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fall
+    {
+        0%  {bottom: 0px;}
+        50% {bottom: -100px;}
+        100%{bottom: -300px; transform: rotateX(90deg);}
+    }

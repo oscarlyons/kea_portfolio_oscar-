@@ -1,0 +1,76 @@
+.wrapper{
+
+    background-image: url(images/background-700-1000.png);
+    width: 1000px;
+    height: 700px;
+    position: relative;
+}
+
+#blob {
+    height: 200px;
+    width: 200px;
+    float: left;
+   margin-top: 400px;
+    margin-left: 150px;
+    position: absolute;
+
+   background-image: url(images/monster-sheet.png);
+    animation: breathing 2s steps(7) alternate infinite ;
+    background-repeat: no-repeat;
+}
+
+@keyframes breathing {
+
+    100%
+    {
+        background-position: -1425px 0px;
+    }
+       }
+
+.hand{
+    position: absolute;
+   margin-left: 500px;
+    margin-top: 300px;
+    animation: levitation 4s infinite
+
+
+}
+@keyframes levitation {
+ 25% {
+                transform: translate(10px, 0px);
+
+            }
+            50% {
+                transform: translate(10px, 10px);
+
+            }
+
+            75% {
+                transform: translate(0px, 10px);
+
+            }
+            100% {
+                transform: translate(0px, 0px);
+
+            }
+}
+#dont_take {
+    background-image: url(images/dont-take.png);
+    border:none;
+    background-color: transparent;
+    width: 500px;
+    height: 500px
+
+
+}
+#take {
+    background-image: url(images/take.png);
+    border:none;
+    background-color: transparent;
+    width: 500px;
+    height: 500px
+
+
+}
+
+
